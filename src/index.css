@@ -1,0 +1,53 @@
+
+
+html {
+  background-color: rgb(243, 253, 253);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.container {
+  justify-self: center;
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-areas: 
+  "tabs display";
+  margin: auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
+.tabs {
+  grid: "tabs";
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs button {
+  margin: 10px;
+  font-size: 1.2em;
+  background-color: rgb(243, 253, 253);
+  border: none;
+  cursor: pointer;
+  border-left: 2px solid transparent;
+  padding: 15px 5px;
+}
+
+.tabs button:hover {
+  color:rgb(0, 156, 156);
+  border-left: 2px solid rgb(0, 156, 156);
+}
+
+.display {
+  display: "display";
+}

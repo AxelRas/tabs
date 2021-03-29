@@ -1,22 +1,25 @@
 {
     "people": [
         {
-            "name": "",
-            "role": "",
-            "duration": "",
-            "bulletPoints": []
+            "name": "'Nard-Dog",
+            "role": "Paper salesman",
+            "duration": ["2006-6", "2013-8"],
+            "bulletPoints": ["I can dance", "I can sing", "I can play the banjo, innit?", "And if you hadn't noticed, I've got a pretty good British accent."],
+            "id": 1
         },
         {
-            "name": "",
-            "role": "",
-            "duration": "",
-            "bulletPoints": []
+            "name": "The Rocket",
+            "role": "Snooker player",
+            "duration": ["1993-4"],
+            "bulletPoints": ["15 147's", "+1,100 Century breaks", "Six-time world champion", "A proper lad"],
+            "id": 2
         },
         {
-            "name": "",
-            "role": "",
-            "duration": "",
-            "bulletPoints": []
+            "name": "Honey Badger",
+            "role": "Formula 1 Driver",
+            "duration": ["2011-3"],
+            "bulletPoints": ["All around funny guy", "Oi oi oi", "Fast boi"],
+            "id": 3
         }
     ]
 }
