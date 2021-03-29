@@ -8,7 +8,7 @@ class App extends React.Component {
     super();
     this.state = {
       people: data.people,
-      currentDisplay: data.people.filter(person => person.id === 3)
+      currentDisplay: data.people.filter(person => person.id === 4)
     }
 
     this.display = this.display.bind(this);
