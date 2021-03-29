@@ -21,7 +21,7 @@ export default class People extends Component {
             <div className="container">
                 <div className="tabs">
                     {this.props.people.map(person => (
-                        <button onClick={() => this.props.displayButton(person.id)} className="tab-button">{person.name.toUpperCase()}</button>
+                        <button id={"btn-" + person.id} onClick={() => this.props.displayButton(person.id)} className="tab-button">{person.name.toUpperCase()}</button>
                     ))}
                 </div>
 
@@ -36,7 +36,7 @@ export default class People extends Component {
                                     <li>{point}</li>
                                 ))}
                             </ul>
-                            <button className="more-info-btn">More Info</button>
+                            <button className="more-info-btn">MORE INFO</button>
                         </div>
                     ))}
                 </div>

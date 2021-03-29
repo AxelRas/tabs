@@ -1,6 +1,7 @@
 import React from 'react';
 import data from './people.json';
 import People from './components/People';
+import $ from 'jquery';
 
 
 class App extends React.Component {
@@ -8,15 +9,24 @@ class App extends React.Component {
     super();
     this.state = {
       people: data.people,
-      currentDisplay: data.people.filter(person => person.id === 4)
+      currentDisplay: data.people.filter(person => person.id === 4),
+      currentId: 4
     }
 
     this.display = this.display.bind(this);
   }
 
-  display(id) {
+  componentDidMount(){
+    $("#btn-" + this.state.currentId).css({"color":"rgb(0, 156, 156)", "border-left": "2px solid rgb(0, 156, 156)"});
+  }
+
+  display(id) {    
+    $("#btn-" + this.state.currentId).css({"color":"", "border-left": ""});
+    $("#btn-" + id).css({"color":"rgb(0, 156, 156)", "border-left": "2px solid rgb(0, 156, 156)"});
+
     this.setState({
-      currentDisplay: data.people.filter(person => person.id === id)
+      currentDisplay: data.people.filter(person => person.id === id),
+      currentId: id
     });
   }
 
